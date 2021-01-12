@@ -1,0 +1,29 @@
+{
+    "name": "zdrojowa/building-log-module",
+    "description": "Menu",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alina Dawydowa",
+            "email": "a.dawydowa@zdrojowainvest.pl"
+        }
+    ],
+    "homepage": "https://github.com/zdrojowa/building-log-module",
+    "keywords": ["MenuModule", "Laravel"],
+    "require": {
+        "ext-json": "*",
+        "jenssegers/mongodb": "*",
+        "zdrojowa/dashboardmodule": "^1.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Selene\\Modules\\BuildingLogModule\\": "src/"
+        }
+    }
+}
