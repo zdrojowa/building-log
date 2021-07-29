@@ -1,7 +1,7 @@
 name: BuildingLogModule
-version: 1.0.0
+version: 1.0.1
 
-aclAnchor: BuildingLog
+aclAnchor: BuildingLogModule
 aclName: Dziennik Budowy
 
 routePrefix: BuildingLogModule

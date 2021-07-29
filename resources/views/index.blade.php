@@ -55,7 +55,7 @@
                     ajax: 'key',
                     type: 'actions',
                     buttons: [
-                    @permission('BuildingLog.edit')
+                    @permission('BuildingLogModule.edit')
                         {
                             color: 'primary',
                             icon: 'mdi mdi-pencil',
@@ -63,7 +63,7 @@
                             url: "{{route('BuildingLogModule::edit', ['buildingLog' => '%%id%%'])}}"
                         },
                     @endpermission
-                    @permission('BuildingLog.delete')
+                    @permission('BuildingLogModule.delete')
                         {
                             color: 'danger',
                             icon: 'mdi mdi-delete',

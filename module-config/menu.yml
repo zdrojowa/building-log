@@ -1,13 +1,13 @@
 buildingLog:
   name: Dziennik budowy
   icon: mdi mdi-image-multiple
-  permission: BuildingLog
+  permission: BuildingLogModule
   children:
     list:
       name: Lista
       route: BuildingLogModule::index
-      permission: BuildingLog
+      permission: BuildingLogModule
     add:
       name: Dodaj
       route: BuildingLogModule::create
-      permission: BuildingLog.add
+      permission: BuildingLogModule.add

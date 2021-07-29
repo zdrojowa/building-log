@@ -1,62 +1,62 @@
 index:
   path: /dashboard/building-log
   controller: Selene\Modules\BuildingLogModule\Http\Controllers\BuildingLogController@index
-  permission: BuildingLog
+  permission: BuildingLogModule
   methods:
     - GET
 
 ajax:
   path: /dashboard/building-log/ajax
   controller: Selene\Modules\BuildingLogModule\Http\Controllers\BuildingLogController@ajax
-  permission: BuildingLog
+  permission: BuildingLogModule
   methods:
     - POST
 
 create:
   path: /dashboard/building-log/create
   controller: Selene\Modules\BuildingLogModule\Http\Controllers\BuildingLogController@create
-  permission: BuildingLog.add
+  permission: BuildingLogModule.add
   methods:
     - GET
 
 store:
   path: /dashboard/building-log/create
   controller: Selene\Modules\BuildingLogModule\Http\Controllers\BuildingLogController@store
-  permission: BuildingLog.add
+  permission: BuildingLogModule.add
   methods:
     - POST
 
 edit:
   path: /dashboard/building-log/{{buildingLog}}/edit
   controller: Selene\Modules\BuildingLogModule\Http\Controllers\BuildingLogController@edit
-  permission: BuildingLog.edit
+  permission: BuildingLogModule.edit
   methods:
     - GET
 
 edit.storeImage:
   path: /dashboard/building-log/{{buildingLog}}/edit/store-image
   controller: Selene\Modules\BuildingLogModule\Http\Controllers\BuildingLogController@storeImage
-  permission: BuildingLog.edit
+  permission: BuildingLogModule.edit
   methods:
     - POST
 
 edit.saveSequence:
   path: /dashboard/building-log/{{buildingLog}}/edit/update-sequence
   controller: Selene\Modules\BuildingLogModule\Http\Controllers\BuildingLogController@updateSequence
-  permission: BuildingLog.edit
+  permission: BuildingLogModule.edit
   methods:
     - POST
 
 destroy:
   path: /dashboard/building-log/{{buildingLog}}
   controller: Selene\Modules\BuildingLogModule\Http\Controllers\BuildingLogController@destroy
-  permission: BuildingLog.delete
+  permission: BuildingLogModule.delete
   methods:
     - DELETE
 
 destroy.photo:
   path: /dashboard/building-log/{{buildingLog}}/photo/{buildingLogPhoto}
   controller: Selene\Modules\BuildingLogModule\Http\Controllers\BuildingLogController@destroyPhoto
-  permission: BuildingLog.edit
+  permission: BuildingLogModule.edit
   methods:
     - DELETE
